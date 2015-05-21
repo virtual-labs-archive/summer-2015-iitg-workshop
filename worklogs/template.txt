@@ -1,0 +1,3 @@
+#+title: Worklog for <Your Name>
+* [2015-05-21 Thu] :: A detailed report on the work accomplished and 
+  planned for the day is enumerated here
