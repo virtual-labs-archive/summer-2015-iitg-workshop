@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Level 5 Definition Guide</title>
+<!-- 2015-05-22 Fri 09:19 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="VLEAD" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="style/css/worg-style.css" />
+<link rel="stylesheet" type="text/css" href="style/css/override.css" />
+<link rel="icon" type="image/png" href="style/img/favicon/popl.png" />
+<script type="text/javascript" src="style/js/org-info.js">
+/**
+ *
+ * @source: style/js/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in style/js/org-info.js.
+ *
+ * Copyright (C) 2012-2013 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in style/js/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "1");
+org_html_manager.set("LINK_HOME", "index.html");
+org_html_manager.set("LINK_UP", "index.html");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="index.html"> UP </a>
+ |
+ <a accesskey="H" href="index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Level 5 Definition Guide</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Integration Levels</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Level 0</a></li>
+<li><a href="#sec-1-2">1.2. Level 1 :: Versioned</a></li>
+<li><a href="#sec-1-3">1.3. Level 2 :: Buildable</a></li>
+<li><a href="#sec-1-4">1.4. Level 3 :: Testable</a></li>
+<li><a href="#sec-1-5">1.5. Level 4 :: Hostable</a></li>
+<li><a href="#sec-1-6">1.6. Level 5 :: Automated Deployment of a Lab</a></li>
+<li><a href="#sec-1-7">1.7. Level 6 :: Life-Cycle Management</a>
+<ul>
+<li><a href="#sec-1-7-1">1.7.1. Structure of the scripts</a></li>
+<li><a href="#sec-1-7-2">1.7.2. Scripts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Integration Levels</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Level 0</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Lab does not adhere to any of the integration critetia
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Level 1 :: Versioned</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Complete sources are versioned at an available location. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Level 2 :: Buildable</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Sources conform to a lab development kit. They are buildable through scripts.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Level 3 :: Testable</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Lab has unit and integration tests and is testable on a central test server.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Level 4 :: Hostable</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Lab is deployable on a central hosting server
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Level 5 :: Automated Deployment of a Lab</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+Lab is supported by a specification and scripts for automated deployment
+</p>
+
+<p>
+At this level, the lab gets deployed on a machine without manual
+intervention.  The specification for deployment is in place which is the
+input to the deployment service.
+</p>
+
+<p>
+The deployment specification will capture all the steps that are required
+to deploy a lab.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> Level 6 :: Life-Cycle Management</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+Lab is supported by a set of scripts for life-cycle management of lab. 
+Life
+</p>
+
+<p>
+Life cycle management is the ability to perform these tasks on a lab:
+start, stop, backup, restore from a previous backup and test.  Having such
+functionality helps continuous releases of the software running the lab.
+This management of a lab is achieved through the following bunch of
+scripts. These scripts are developed by the integrator.
+</p>
+</div>
+
+<div id="outline-container-sec-1-7-1" class="outline-4">
+<h4 id="sec-1-7-1"><span class="section-number-4">1.7.1</span> Structure of the scripts</h4>
+<div class="outline-text-4" id="text-1-7-1">
+<ul class="org-ul">
+<li>README.txt
+</li>
+<li>scripts/
+<ul class="org-ul">
+<li>start
+</li>
+<li>stop
+</li>
+<li>backup
+</li>
+<li>restore
+</li>
+<li>test
+</li>
+<li>labspec.json
+</li>
+</ul>
+</li>
+<li>src/
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-7-2" class="outline-4">
+<h4 id="sec-1-7-2"><span class="section-number-4">1.7.2</span> Scripts</h4>
+<div class="outline-text-4" id="text-1-7-2">
+</div><ol class="org-ol"><li><a id="sec-1-7-2-1" name="sec-1-7-2-1"></a>Start a Lab<br  /><div class="outline-text-5" id="text-1-7-2-1">
+<p>
+Script <code>start</code> provides a mechanism to start databases, web server,
+application defined services and populating data stores that are required
+for the lab to work.  The script ensures all services are started and the
+dependencies of the lab are initialized in the right order.
+</p>
+</div>
+</li>
+
+<li><a id="sec-1-7-2-2" name="sec-1-7-2-2"></a>Stop a Lab<br  /><div class="outline-text-5" id="text-1-7-2-2">
+<p>
+Script <code>stop</code> stops the lab from running.  This script does a clean
+termination of all the processes and services initiated by the lab.  This
+script backs up the relevant data and state information that is necessary
+to bring back the lab to the state it was in before termination.
+</p>
+</div>
+</li>
+
+<li><a id="sec-1-7-2-3" name="sec-1-7-2-3"></a>Back up a Lab<br  /><div class="outline-text-5" id="text-1-7-2-3">
+<p>
+Script <code>backup</code> captures and saves the relevant data that is essential to
+bring the lab to the same state it was in at the time of backup.  The
+relevant data could vary with each version of lab software released.  A
+subset of relevant data is user information, configuration, user files and
+databases.
+</p>
+
+<p>
+There is a high possibility that this relevant data varies with each
+version of lab software.  Therefore, when a backup is made, it is ensured
+that the version of lab software is also captured.
+</p>
+
+<p>
+This script is required for: disaster recovery, enable newer
+versions of lab deployment by retaining the old data, regular backups,
+etc.
+</p>
+
+<p>
+When the <code>backup</code> script is executed, a single file is generated in the
+same directoy.  The version of the lab software is appended to the
+generated file. The file is named <code>labbackup_&lt;version&gt;.tar</code>.  Example
+values of <code>&lt;version&gt;</code> are <code>v1.0</code>, <code>v1.0.1</code> , etc.  More information on
+versioning/tagging is available <a href="http://git-scm.com/book/en/v2/Git-Basics-Tagging">here</a>.
+</p>
+
+<p>
+If there is no backup required for a lab, the script should still be in
+place, which can either be empty or contain comments. 
+</p>
+</div>
+</li>
+
+<li><a id="sec-1-7-2-4" name="sec-1-7-2-4"></a>Restore a Lab<br  /><div class="outline-text-5" id="text-1-7-2-4">
+<p>
+Script <code>restore</code> restores data backed up by <code>backup</code> script.  The
+<code>restore</code> script takes the filename as argument and uses the supplied file
+for restoration.
+</p>
+
+<pre class="example">
+% restore labbackup_&lt;version&gt;.tar
+</pre>
+
+<p>
+The <code>restore</code> script works with at least two versions of lab software when
+there is more than one version of lab software available. 
+</p>
+
+<ol class="org-ol">
+<li><code>restore</code> script restores the lab from the backup file generated by the
+<code>backup</code> script. Both the <code>restore</code> and <code>backup</code> are part of the same
+release of the lab software.
+</li>
+
+<li><code>restore</code> script restores the lab from the backup file generated by the
+<code>backup</code> script contained in the previous release of the lab software.
+</li>
+</ol>
+
+<p>
+If restoration process requires certain services to be stopped or started,
+then <code>restore</code> script takes care of all such requirements.
+</p>
+
+<p>
+If there is no restoration required for a lab, the script should still be in
+place, which can either be empty or contain comments. 
+</p>
+</div>
+</li>
+
+<li><a id="sec-1-7-2-5" name="sec-1-7-2-5"></a>Test a Lab<br  /><div class="outline-text-5" id="text-1-7-2-5">
+<p>
+When a lab is hosted, script <code>test</code> provides a mechanism to ascertain the
+lab is fully functional.  These test cases are run immediately after the
+lab is deployed and also at regular intervals. The developers are informed
+of the failure in test cases with the test output.
+</p>
+
+<p>
+A test script indicates either successful or unsuccessful execution of all
+tests.  The output the test script is saved to a file named
+<code>test_results.txt</code> in the same directory.
+</p>
+</div>
+</li></ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">[2015-05-22 Fri]</span></span></p>
+<p class="author">Author: VLEAD</p>
+<p class="date">Created: 2015-05-22 Fri 09:19</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
