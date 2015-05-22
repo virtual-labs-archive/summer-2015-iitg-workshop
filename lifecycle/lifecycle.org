@@ -40,19 +40,16 @@
     scripts. These scripts are developed by the integrator.
 
 *** Structure of the scripts 
+    + README.txt
+    + scripts/
+      - start
+      - stop
+      - backup
+      - restore
+      - test
+      - labspec.json
+    + src/
 
->-- README.txt
->-- scripts/
-    >-- start
-    >-- stop
-    >-- backup
-    >-- restore
-    >-- test
-    >-- labspec.json
-    >--  
-    >---
->--src/
-    
 *** Scripts
 **** Start a Lab
      Script =start= provides a mechanism to start databases, web server,
