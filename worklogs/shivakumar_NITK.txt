@@ -1,0 +1,5 @@
+[2015-05-21 Thu] : Centos setup and network connections setup.
+[2015-05-22 Fri] : Setting environment for ADS and Installed the google chrome for testing ADS and Learnt some new unix commands .
+[2015-05-25 Mon] :Tested 5 labs of NITK in ADS.And raised issue for hosting the labs.
+[2015-05-26 Tue] :Tested 2 labs of Electrical in ADS.And raised issue for hosting the labs.  
+[2015-05-27 Wed] : made some changes in html and pushed to repo and also tested in ADS.
