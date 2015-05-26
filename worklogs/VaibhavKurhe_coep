@@ -1,0 +1,4 @@
+#+title: Worklog for <VaibhavKurhe_coep>
+[2015-05-25 Mon]::Done with the setup of Centos 6.5 on my personal system and configured with the ovpl setup and respective dependencies.
+[2015-05-26 Tue]::Done with the ovpl setup completely with openvz and tested 9 labs on ovpl for Level 5 and started to make it Level 6.
+[2015-05-27 Wed]::Done with the Level 6 setup of 9 labs and tested successfully on ovpl. Have 9 labs at Level 6 now.
