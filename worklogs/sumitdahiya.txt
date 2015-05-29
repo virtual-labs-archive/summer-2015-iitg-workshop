@@ -1,7 +1,0 @@
-#+title: Worklog for <Sumit Dahiya>
-* [2015-05-21 Thu] :: Got a brief introduction of Github and all levels (level 0 to level 6) from Mr. Thirumal.
-* [2015-05-22 Fri] :: With the coordination of Apurv and Ambika, got to learn some commands about Github and also got an overview of all levels (level 0 to level 6). Repositories of all 5 labs are created. One lab is structured and also pushed to level 3 in the local machine. We're not able to push this lab on Github as the push command is not working due to some technical problems. One lab is using LabView, which needs to be converted to Sandhi.
-* [2015-05-25 Mon] :: With the coordination of Apurv and Ambika, pushed virtual-smart-structures-and-dynamics laboratory to Level 3 and trying to put it on Level 5 on Github. I want atmost two and atleast one lab to be at level 6 upto [2015-05-27 Wed].
-* [2015-05-26 Tue] :: With the coordination of Apurv, Ambika and Madhavi, pushed virtual-smart-structures-and-dynamics-laboratory-iitd and queueing-networks-modelling-lab-iitd to Level 6 and sent the request for hosting on engineers forum.
-* [2015-05-27 Wed] :: Trying to run bioreactor-modelling-and-simulation-laboratory-iitd manually. Currently, our two labs are at level 6 and three labs are at level 2.
-* [2015-05-28 Thu] :: Installed Sandhi on the system.
