@@ -5,5 +5,5 @@
 * [2015-05-26 Tue] :: With the coordination of Apurv, Ambika and Madhavi, pushed virtual-smart-structures-and-dynamics-laboratory-iitd and queueing-networks-modelling-lab-iitd to Level 6 and sent the request for hosting on engineers forum.
 * [2015-05-27 Wed] :: Trying to run bioreactor-modelling-and-simulation-laboratory-iitd manually. Currently, our two labs are at level 6 and three labs are at level 2.
 * [2015-05-28 Thu] :: With the coordination of IIT Bombay team, Installed Sandhi on the system.
-* [2015-05-29 Fri] :: Learnt following things: 1. Creating blocks in Sandhi 2. Adding funtionality to these blocks. 3. Adding Source and Sink to these blocks, where source represents output connection and sink represents input connection.
+* [2015-05-29 Fri] :: Learnt following things from IIT Bombay team: 1. Creating blocks in Sandhi 2. Adding funtionality to these blocks. 3. Adding Source and Sink to these blocks.
 * [2015-06-01 Mon] :: Revising Sandhi programs. Posted an issue (with Help Wanted label) on Engineers Forum, about problem in hosting power-electronics-and-electric-drives-laboratory-iitd as the lab uses Windows Server 2008 and IIS6. 
