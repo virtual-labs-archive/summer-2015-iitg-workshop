@@ -12,7 +12,7 @@
 * [2015-06-04 Thu] :: Planning to push engineering-electro-magnetics-laboratory-iitd to level 6. 
 * [2015-06-05 Fri] :: With the coordination of Ambika and Sripathi, trying to install ADS on my laptop.
 * [2015-06-08 Mon] :: With the coordination of Yogesh and Ambika, uninstalled previous ubuntu because it was wubi and we are not getting enough space to install centos in the virtual box. So, again installed ubuntu from a bootable pen drive.
-* [2015-06-09 Mon] :: 
-* [2015-06-10 Tue] :: 
-* [2015-06-11 Wed] :: 
-* [2015-06-12 Thu] ::
+* [2015-06-09 Tue] :: 
+* [2015-06-10 Wed] :: 
+* [2015-06-11 Thu] :: 
+* [2015-06-12 Fri] ::
